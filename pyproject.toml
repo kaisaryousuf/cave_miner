@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cave-miner"
+version = "2.0.0"
+description = "Search for code caves in ELF, Mach-O and PE binaries, and inject code into them."
+authors = ["Antonin Deniau <antonin.deniau@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+docopt = "^0.6.2"
+lief = "^0.17.2"
+
+[tool.poetry.scripts]
+cave_miner = "cave_miner.__main__:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
